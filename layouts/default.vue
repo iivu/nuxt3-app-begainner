@@ -1,8 +1,9 @@
 <template>
-    <div>
-        <h1>My App</h1>
-        <NuxtLink to="/">Go to index</NuxtLink>
-        <NuxtLink to="/detail/1">Go to detail 1</NuxtLink>
-        <NuxtPage/>
-    </div>
+  <div class="min-w-[1024px] bg-gray-100 flex flex-col min-h-screen">
+    <AppHeader/>
+    <main class="container m-auto mt-20">
+     <slot/>
+    </main>
+    <AppFooter/>
+  </div>
 </template>

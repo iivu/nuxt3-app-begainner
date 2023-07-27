@@ -6,11 +6,28 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "ts-node ./server/database/test.ts",
+    "migrate:reset": "prisma migrate reset --force --skip-generate",
+    "migrate:dev": "prisma migrate dev --name init --schema ./server/database/schema.prisma",
+    "prisma:format": "prisma format --schema ./server/database/schema.prisma",
+    "prisma:generate": "prisma generate --schema ./server/database/schema.prisma"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "^18.16.19",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.6.5",
+    "prisma": "5.0.0"
+  },
+  "dependencies": {
+    "@huntersofbook/naive-ui-nuxt": "^1.1.0",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@prisma/client": "5.0.0",
+    "bcryptjs": "^2.4.3",
+    "gray-matter": "^4.0.3",
+    "jsonwebtoken": "^9.0.1",
+    "ts-node": "^10.9.1"
   }
 }

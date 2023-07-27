@@ -1,5 +1,5 @@
 <template>
-    index
+ course
 </template>
  
 <script setup lang="ts">

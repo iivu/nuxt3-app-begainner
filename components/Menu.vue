@@ -1,0 +1,23 @@
+<template>
+  <div
+    class="transition-all duration-[0.2s] px-2 py-1 rounded cursor-pointer hover:(bg-blue-50 text-blue-700) active:(!bg-blue-100)"
+    :class="{ 'menu-item-active': active }"
+  >
+    <slot />
+  </div>
+</template>
+
+<script setup lang="ts">
+  type Props = { active?: boolean };
+
+  withDefaults(defineProps<Props>(), {
+    active: false,
+  });
+</script>
+
+<style scoped>
+  .menu-item-active {
+    background-color: rgb(219, 254, 238);
+    color: rgb(52, 157, 96);
+  }
+</style>

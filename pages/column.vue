@@ -1,5 +1,5 @@
 <template>
-    index
+column 
 </template>
  
 <script setup lang="ts">
