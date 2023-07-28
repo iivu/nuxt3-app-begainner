@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
   import { useUser } from '~/store/useUser';
-// implemented useDialog
+
   const store = useUser();
   const dialog = useDialog();
   const route = useRoute();

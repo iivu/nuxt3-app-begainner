@@ -1,6 +1,9 @@
 {
   "name": "nuxt-app",
   "private": true,
+  "prisma": {
+    "seed": "ts-node ./server/database/seed.ts"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -11,7 +14,8 @@
     "migrate:reset": "prisma migrate reset --force --skip-generate",
     "migrate:dev": "prisma migrate dev --name init --schema ./server/database/schema.prisma",
     "prisma:format": "prisma format --schema ./server/database/schema.prisma",
-    "prisma:generate": "prisma generate --schema ./server/database/schema.prisma"
+    "prisma:generate": "prisma generate --schema ./server/database/schema.prisma",
+    "seed": "prisma db seed"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
