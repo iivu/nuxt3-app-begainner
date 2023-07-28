@@ -9,6 +9,5 @@ export default defineEventHandler(async (event) => {
     return { ok: true, data: { columns, courses } };
   } catch (error) {
     return sendError(event, createError('获取数据失败'));
-    // imple
   }
 });
