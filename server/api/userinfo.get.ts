@@ -1,4 +1,4 @@
-import * as jwt from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import { getUserByName } from '../database/repositories/userRepository';
 
 export default defineEventHandler(async (event) => {
