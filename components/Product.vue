@@ -31,9 +31,9 @@
 
   const open = () => {
     if (props.type === 'course') {
-      navigateTo(`/course/${props.data.id}`);
+      navigateTo(`/course/detail/${props.data.id}`);
     } else {
-      navigateTo(`/column/${props.data.id}`);
+      navigateTo(`/column/detail/${props.data.id}`);
     }
   };
 </script>
