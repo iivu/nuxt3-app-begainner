@@ -25,8 +25,8 @@
   const route = useRoute();
   const menus = ref([
     { path: '/', label: '首页' },
-    { path: '/column', label: '专栏' },
-    { path: '/course', label: '课堂' },
+    { path: '/list/column', label: '专栏' },
+    { path: '/list/course', label: '课堂' },
   ]);
   const options = [
     { label: '用户中心', key: 'center' },
